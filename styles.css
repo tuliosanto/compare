@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    display: inline;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: inline;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos do conteúdo principal */
+  main {
+    padding: 40px 0;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    font-size: 14px;
+  }
+  
+  .product button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
