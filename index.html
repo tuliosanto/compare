@@ -2,49 +2,42 @@
 <html lang='pt-br'>
   <meta charset='UTF-8'>
 <head>
-  <title>Meu Site</title>
+  <title>Compare.com: Descubra os preços mais baratos da sua região.</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <!-- Cabeçalho -->
-  <header>
-      <h1><a href="index.html">COMPARE.com</a></h1>
-      <nav class="cabecalho-menu">
-          <a class="cabecalho-menu-item" href="index.html"><font color="#7BC74D"><strong>FAÇA SUA LISTA</strong></font></a>
-          <a class="cabecalho-menu-item" href="categorias.html">Categorias</a>
-          <a class="cabecalho-menu-item" href="#">Seu Nome</a></li>
-          <a class="cabecalho-menu-item" href="#">Você está em Santa Maria - RS</a>
-      </nav>
+  <header id="header">
+    <div class="container">
+      <div class="flex">
+        <a href="index.html">LOGO</a>
+        <nav>
+          <ul>
+            <li><a href="#">FAÇA SUA LISTA</a></li>
+            <li><a href="#">Usuário</a></li>
+            <li><a href="#">Você está em Santa Maria - RS</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#"><button>CONTATO</button></a>
+        </div><!--Btn-Contato-->
+      </div><!--Flex-->
+    </div><!--container-->
   </header>
 
   <!-- Conteúdo principal -->
   <main>
-    <div class="objetivo">
-      <p>OS PRODUTOS MAIS BARATOS NA SUA REGIÃO</p>
-    </div>
-    <div class="busca-produto">
-      <div class="ret-area-de-busca">
-        <p>Onde está mais em conta ?</p>
-        <input class="ret-searchbar" type="text" name="search" placeholder="Digite o produto que deseja buscar">
-      </div>
-    </div>
-    <div class="categorias-index">
-      <p>Ou busque por categorias</p>
-      <div class="break" ></div>
-      <a class="button-categorias" href="./Categorias/Produtos/supermercado/bebidas/bebidas.html">BEBIDAS</a>
-      <a class="button-categorias">MERCEARIA</a>
-      <a class="button-categorias">AÇOUGUE</a>
-      <div class="break"></div>
-      <a class="button-categorias" href="./categorias.html">TODAS AS CATEGORIAS</a>
-    </div>
+    <section class="banner">
+      <h1>DESCUBRA UM <span>MUNDO NOVO</span></h1>
+    </section>
   </main>
-
+  
+  <!-- Conteúdo lateral -->
+  <aside>
+  </aside>
+    
   <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
-      <p>Teste de alteração.</p>
-    </div>
   </footer>
 </body>
 </html>
