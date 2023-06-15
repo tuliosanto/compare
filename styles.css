@@ -13,6 +13,7 @@
 html {
 height: 500vh;
 font-family: 'Poppins', sans-serif;
+background-color: #3D0128 ;
 }
 
 .container {
@@ -40,7 +41,7 @@ font-family: 'Poppins', sans-serif;
 /* Estilos do cabeçalho */
   header {
     grid-area: header-area;
-    padding: 60px 4%;
+    padding: 30px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +53,7 @@ font-family: 'Poppins', sans-serif;
 
   header i {
     font-size: 30px;
-    color: white;
+    color: #FFC600;
   }
 
   header ul {
@@ -70,13 +71,13 @@ font-family: 'Poppins', sans-serif;
   }
 
   header.rolagem {
-    background-color: white;
+    background-color: #3D0128;
     padding: 10px 4%;
 
   }
 
   header.rolagem a, header.rolagem i{
-    color:blue;
+    color:#FFFFFF;
   }
 
 /* Estilos do conteúdo principal */
@@ -92,34 +93,56 @@ font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .banner h1, .saibamais h1{
-    font-size: 4em;
+  
+  .banner h1 span, .saibamais h1 span {
+    color: #FFC600;
+  }
+
+  .objectivebanner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -280px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255 255 255 / 0.2);
+    align-self: flex-start;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .objectivebanner h1 {
+    font-size: 2em;
     flex-basis: 100%;
     align-content: center;
     justify-content: center;
-
-  }
-
-  .banner h1 span, .saibamais h1 span {
-    color: lightseagreen;
-  }
-
-  .banner div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 200px;
-    background-color: rgba(255 255 255 / 0.3);
-    align-content: center;
-    justify-content: center;
-    gap: 20px;
   }
   
+  .searchbanner {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    width:fit-content;
+    height: 100px;
+    background-color: #3D0128;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .searchbanner h1{
+    color: #FFFFFF;
+    font-size: 2em;
+    flex-basis: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
   .banner input {
     width: 50%;
   }
@@ -135,6 +158,16 @@ font-family: 'Poppins', sans-serif;
     text-align: center;
     gap: 10px;
   }
+  
+  .saibamais h1 {
+    color: #FFFFFF;
+    font-size: 3em;
+    flex-basis: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
+
   /* Estilos da barra lateral */
   aside {
     grid-area: aside-area;
