@@ -41,7 +41,7 @@ background-color: #3D0128 ;
 /* Estilos do cabeçalho */
   header {
     grid-area: header-area;
-    padding: 30px 4%;
+    padding: 40px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@ background-color: #3D0128 ;
   }
 
   .banner {
-    height: 90vh;
+    height: 880px;
     background-image: url(./supermarketbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
