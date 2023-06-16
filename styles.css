@@ -89,32 +89,31 @@ background-color: #3D0128 ;
   }
 
   .banner {
-    height: 840px;
-    background-image: url(./Images/winebottles.jpg);
+    height: 780px;
+    /* background-image: url(./Images/winebottles.jpg); */
+    background-color: #01023d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
     text-align: center;
   }
 
   
-  .banner h1 span, .saibamais h1 span {
+  .banner h1 span, .saibamais h1 span, textoindexcategoria h1 span {
     color: #FFC600;
   }
 
   .objectivebanner {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -250px;
     width: 100%;
     height: 50px;
+    margin-top: 100px;
     background-color: rgba(0 0 0 / 0.2);
-    align-self: flex-start;
     align-content: center;
     justify-content: center;
   }
@@ -132,10 +131,9 @@ background-color: #3D0128 ;
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    padding: 10px;
     height: fit-content;
     font-size: 16px;
-    background-color: rgba(0 0 0 / 0.2);
+    /* background-color: rgba(0 0 0 / 0.2); */
     align-content: center;
     justify-content: center;
   }
@@ -143,7 +141,7 @@ background-color: #3D0128 ;
   .searchbanner h1{
     color: #F9F5F6;
     font-family: 'Starife';
-    padding-bottom: 10px;
+    padding-bottom: 30px; /* Espaçamento entre o Compare.com e a Caixa de Busca */
     font-size: 3em;
     letter-spacing: 3px;
     flex-basis: 100%;
@@ -186,6 +184,49 @@ background-color: #3D0128 ;
     font-size: 16px;
     cursor: pointer;
   }
+
+  .indexcategorias {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 60px;;
+
+  }
+
+  .indexcategorias div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #01023d;
+    width: 300px;
+    height: 50px;
+    font-size: 12px;
+    color: #FFC600;
+  }
+
+  .cat_bebidas {
+    background-image: url(./Images/winebottles.jpg);
+  }
+
+  .cat_mercearia {
+    background-image: url(./Images/winebottles.jpg);
+  }
+
+  .cat_casaeconstrucao{
+    background-image: url(./Images/winebottles.jpg);
+  }
+
+  .cat_todas {
+    background-image: url(./Images/winebottles.jpg);
+  }
+
   .saibamais div {
     display: flex;
     width: 100%;
