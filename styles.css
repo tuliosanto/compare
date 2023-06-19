@@ -15,7 +15,10 @@
 html {
 height: 500vh;
 font-family: 'Poppins',sans-serif;
-background-color: #3D0128 ;
+/* background: #0f0c29;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+
 }
 
 .container {
@@ -49,7 +52,7 @@ background-color: #3D0128 ;
     left: 0;
     width: 100%;
     transition: .5s;
-    background-color: transparent;
+    background-color: #0f0c29; /* MENU TRANSPARENTE - BGCOLOR TRANSPARENT */
     z-index: 100;
   }
 
@@ -73,7 +76,7 @@ background-color: #3D0128 ;
   }
 
   header.rolagem {
-    background-color: #3D0128;
+    background-color: #0f0c29;
     padding: 18px 4%;
 
   }
@@ -85,13 +88,12 @@ background-color: #3D0128 ;
 /* Estilos do conteúdo principal */
   main {
     grid-area: main-area;
-
   }
 
   .banner {
     height: 780px;
     /* background-image: url(./Images/winebottles.jpg); */
-    background-color: #01023d;
+    /* background-color: #01023d; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,7 +105,7 @@ background-color: #3D0128 ;
   }
 
   
-  .banner h1 span, .saibamais h1 span, textoindexcategoria h1 span {
+  .banner h1 span, .saibamais h1 span {
     color: #FFC600;
   }
 
@@ -112,7 +114,7 @@ background-color: #3D0128 ;
     flex-wrap: wrap;
     width: 100%;
     height: 50px;
-    margin-top: 100px;
+    margin-top: 107px;
     background-color: rgba(0 0 0 / 0.2);
     align-content: center;
     justify-content: center;
@@ -139,10 +141,11 @@ background-color: #3D0128 ;
   }
 
   .searchbanner h1{
-    color: #F9F5F6;
+    color: #FFC600;
     font-family: 'Starife';
     padding-bottom: 30px; /* Espaçamento entre o Compare.com e a Caixa de Busca */
-    font-size: 3em;
+    font-size: 64px;
+    text-shadow: 0 0 5px rgba(0 0 0 / 0.5);;
     letter-spacing: 3px;
     flex-basis: 100%;
     align-content: center;
@@ -158,7 +161,7 @@ background-color: #3D0128 ;
   }
 
   .searchbar input[type="text"] {
-    width: 600px;
+    width: 70vh;
     height: 40px;
     padding: 10px;
     border: none;
@@ -173,7 +176,7 @@ background-color: #3D0128 ;
  }
 
   .searchbar button {
-    background-image: url(./Images/Search\ Icon.png);
+    background-image: url(./Images/Search\ Icon.png); /* Botão de Pequisa (LUPA) */
     background-size:contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -191,6 +194,7 @@ background-color: #3D0128 ;
     align-content: center;
     justify-content: center;
     text-align: center;
+    gap: 20px;
     width: 100%;
     height: 200px;
     padding-bottom: 60px;;
@@ -206,45 +210,46 @@ background-color: #3D0128 ;
     background-size: cover;
     background-color: #01023d;
     width: 300px;
-    height: 50px;
-    font-size: 12px;
-    color: #FFC600;
+    height: 100px;
+    border-radius: 50px;
   }
 
+  .indexcategorias h1 {
+    padding-top: 140px;
+    font-size: 20px;
+    color: #FFC600;
+  }
   .cat_bebidas {
-    background-image: url(./Images/winebottles.jpg);
+    background-image: url(#);
   }
 
   .cat_mercearia {
-    background-image: url(./Images/winebottles.jpg);
+    background-image: url(#);
   }
 
   .cat_casaeconstrucao{
-    background-image: url(./Images/winebottles.jpg);
+    background-image: url(#);
   }
 
   .cat_todas {
-    background-image: url(./Images/winebottles.jpg);
+    background-image: url(#);
   }
 
   .saibamais div {
     display: flex;
-    width: 100%;
-    height: 20px;
-    background-color: transparent;
-    border-radius: 10%;
-    align-content: center;
+    align-content: end;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
+    margin-top: 73px;
+    width: 100%;
+    height: 80px;
+    background-color: #0f0c29;
   }
   
   .saibamais h1 {
     color: #F9F5F6;
     font-size: 3em;
-    flex-basis: 100%;
-    align-content: center;
-    justify-content: center;
   }
 
 
