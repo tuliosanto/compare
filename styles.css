@@ -17,7 +17,7 @@ height: 500vh;
 font-family: 'Poppins',sans-serif;
 /* background: #0f0c29;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+/* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 
 }
 
@@ -29,7 +29,7 @@ font-family: 'Poppins',sans-serif;
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -115,7 +115,7 @@ font-family: 'Poppins',sans-serif;
     width: 100%;
     height: 50px;
     margin-top: 107px;
-    background-color: rgba(0 0 0 / 0.2);
+    background-color: rgba(0 0 0 / 0.5);
     align-content: center;
     justify-content: center;
   }
@@ -140,12 +140,12 @@ font-family: 'Poppins',sans-serif;
     justify-content: center;
   }
 
-  .searchbanner h1{
+  .searchbanner h1{ /* COMPARE.COM da barra de busca */
     color: #FFC600;
     font-family: 'Starife';
-    padding-bottom: 30px; /* Espaçamento entre o Compare.com e a Caixa de Busca */
+    padding-bottom: 40px; /* Espaçamento entre o Compare.com e a Caixa de Busca */
     font-size: 64px;
-    text-shadow: 0 0 5px rgba(0 0 0 / 0.5);;
+    text-shadow: 4px 4px 0px rgba(0 0 0 / 1);
     letter-spacing: 3px;
     flex-basis: 100%;
     align-content: center;
@@ -168,11 +168,12 @@ font-family: 'Poppins',sans-serif;
     border-radius: 20px;
     background-color: #F9F5F6; 
     font-size: 16px;
+    box-shadow: 0px 0px 20px rgba(16 13 41 / 0.5);
   }
 
   .searchbar input[type="text"]:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(0 0 0 / 0.5);
+    box-shadow: 0px 0px 10px rgba(0 0 0 / 0.5);
  }
 
   .searchbar button {
@@ -192,9 +193,8 @@ font-family: 'Poppins',sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
-    gap: 20px;
     width: 100%;
     height: 200px;
     padding-bottom: 60px;;
@@ -205,34 +205,33 @@ font-family: 'Poppins',sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #01023d;
-    width: 300px;
+    background-size: contain;
+    background-color: #F9F5F6;
+    width: 100px;
     height: 100px;
-    border-radius: 50px;
   }
 
   .indexcategorias h1 {
-    padding-top: 140px;
+    padding-top: 180px;
     font-size: 20px;
-    color: #FFC600;
+    color: #0f0c29;
+    text-shadow: 2px 2px 0px #FFC600;
   }
   .cat_bebidas {
-    background-image: url(#);
+    background-image: url(./Images/drinks-icon.png);
   }
 
   .cat_mercearia {
-    background-image: url(#);
+    background-image: url(./Images/grocery-icon.png);
   }
 
   .cat_casaeconstrucao{
-    background-image: url(#);
+    background-image: url(./Images/casa-construcao-icon.png);
   }
 
   .cat_todas {
-    background-image: url(#);
+    background-image: url(./Images/categories-icon.png);
   }
 
   .saibamais div {
