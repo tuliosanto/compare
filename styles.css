@@ -207,7 +207,7 @@ font-family: 'Poppins',sans-serif;
     align-items: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #F9F5F6;
+    background-color: transparent;
     width: 100px;
     height: 100px;
   }
@@ -216,7 +216,7 @@ font-family: 'Poppins',sans-serif;
     padding-top: 180px;
     font-size: 20px;
     color: #0f0c29;
-    text-shadow: 2px 2px 0px #FFC600;
+    text-shadow: 1px 1px 0px #888888;
   }
   .cat_bebidas {
     background-image: url(./Images/drinks-icon.png);
@@ -251,7 +251,22 @@ font-family: 'Poppins',sans-serif;
     font-size: 3em;
   }
 
-
+  .grid_categorias{
+    display: grid 1fr 1fr 1fr;
+    grid-template-areas: "a1 a2 a3"
+                         "b1 b2 b3"
+                         "c1 c2 c3";
+    height: 780px;
+    margin-top: 180px;
+  }
+  
+  .supermercado {
+    grid-area: a1;
+  }
+ 
+  .casaconstrucao {
+    grid-area: a2;
+  }
   /* Estilos da barra lateral */
   aside {
     grid-area: aside-area;
