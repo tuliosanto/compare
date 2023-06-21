@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 html {
@@ -252,20 +253,33 @@ font-family: 'Poppins',sans-serif;
   }
 
   .grid_categorias{
-    display: grid 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: "a1 a2 a3"
                          "b1 b2 b3"
                          "c1 c2 c3";
     height: 780px;
     margin-top: 180px;
+    text-decoration: none;
   }
   
   .supermercado {
     grid-area: a1;
+    display: flex;
+    justify-content: center;
   }
  
   .casaconstrucao {
     grid-area: a2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .combustiveis {
+    grid-area: a3;
+    display: flex;
+    justify-content: center;
   }
   /* Estilos da barra lateral */
   aside {
